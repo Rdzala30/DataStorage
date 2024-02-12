@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_page"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        app:cardElevation="50dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Welcome : "
+        android:textStyle="bold"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Email : "
+            android:textStyle="bold"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/textViewContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Contact : "
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/editTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Name"
+        android:padding="5sp"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="4dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/logOutBtnId"
+            android:layout_marginStart="120sp"
+            android:padding="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/newNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65sp"
+            android:hint="Enter your new name"
+            android:minHeight="48sp"
+            android:padding="10sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,TextFields"
+            android:autofillHints="" />
+    <Button
+        android:id="@+id/updateBtnId"
+        android:layout_marginStart="120sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:backgroundTint="@color/blue"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
